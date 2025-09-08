@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="es" translate="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Equipo Galaxia">
+    <title>Cafetería Galaxia</title>
+    <link rel="shortcut icon" href="assets/img/taza-cafe.webp" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/site-style.css">
+    <style>
+        /* ====== TEMA GALÁCTICO ====== */
+
+        body {
+            font-family: "Oswald", sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #1b0b26;
+        }
+
+        .content {
+            background-color: #2a163d;
+            margin: 10px;
+            width: 90%;
+            padding: 20px;
+            box-shadow: 0 4px 15px rgba(97, 0, 165, 0.5);
+            border-radius: 10px;
+            box-sizing: border-box;
+        }
+
+        header {
+            background: linear-gradient(135deg, #1a0033, #3d0072, #6100a5);
+            padding: 10px 0px 10px 15px;
+            border-radius: 10px 10px 0 0;
+            color: #f0e6ff;
+            text-align: center;
+        }
+
+        header h1 {
+            text-shadow: 0px 0px 8px #ff8cff;
+        }
+
+        nav {
+            background-color: #1a0033;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        nav ul li a {
+            display: block;
+            padding: 15px 0;
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        nav ul li {
+            flex: 1;
+            text-align: center;
+        }
+
+        nav ul li a:hover {
+            background-color: #8a2be2;
+            color: #fff;
+        }
+
+        .carrusel {
+            width: 100%;
+            height: 30rem;
+            overflow: hidden;
+            position: relative;
+            border-radius: 10px;
+            margin-top: 1rem;
+            box-shadow: 0 0 15px rgba(138, 43, 226, 0.5);
+        }
+
+        .img-productos {
+            display: flex;
+            width: max-content;
+            animation: scroll 30s linear infinite;
+        }
+
+        .img-productos img {
+            width: 50rem;
+            height: 30rem;
+            object-fit: cover;
+        }
+
+        @keyframes scroll {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(-250rem);
+            }
+        }
+
+        #menu, #promos, #nosotros, #contacto {
+            width: 90%;
+            margin: 2rem auto;
+            padding: 1.5rem 2rem;
+            background-color: #2e1b47;
+            border-radius: 12px;
+            color: #f2eaff;
+            box-shadow: 0 0 15px rgba(97, 0, 165, 0.3);
+        }
+
+        #menu ul, #promos ul, #nosotros ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        #menu ul li, #promos ul li, #nosotros ul li {
+            margin-bottom: 1.6rem;
+            border-left: 4px solid #bd95ff;
+            padding-left: 1rem;
+            transition: background-color 0.3s ease;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        #menu ul li:hover, #promos ul li:hover, #nosotros ul li:hover {
+            background-color: #41235e;
+        }
+
+        #menu ul li strong, #promos ul li strong, #nosotros ul li strong {
+            font-size: 1.15rem;
+            color: #d3b3ff;
+        }
+
+        #menu ul li small, #promos ul li small, #nosotros ul li small {
+            font-size: 0.85rem;
+            font-style: italic;
+            color: #b8a1d9;
+            margin-top: 0.2rem;
+        }
+
+        #contacto p {
+            margin: 0.8rem 0;
+            font-size: 0.95rem;
+            color: #e6dfff;
+            text-align: center;
+        }
+
+        #contacto p:last-child {
+            margin-top: 1.5rem;
+            font-size: 0.85rem;
+            color: #c8a6ff;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <header>
+            <h1><i class="fa-solid fa-mug-saucer"></i>&nbsp;CAFETERÍA GALAXIA ☕✨</h1>
+            <p>Explora sabores de otra dimensión.</p>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="#menu"><i class="fa-solid fa-star"></i>&nbsp;Menú</a></li>
+                <li><a href="#promos"><i class="fa-solid fa-meteor"></i>&nbsp;Promos</a></li>
+                <li><a href="#nosotros"><i class="fa-solid fa-galactic-senate"></i>&nbsp;Nosotros</a></li>
+                <li><a href="#contacto"><i class="fa-solid fa-satellite-dish"></i>&nbsp;Contacto</a></li>
+            </ul>
+        </nav>
+
+        <div class="carrusel">
+            <div class="img-productos">
+                <img src="capuchino.jpg" alt="capuchino">
+                <img src="cheesecake.webp" alt="cheesecake">
+                <img src="croissant.jpeg" alt="croissant">
+                <img src="panini.jpg" alt="panini">
+                <img src="te.webp" alt="té">
+
+                <img src="capuchino.jpg" alt="capuchino">
+                <img src="cheesecake.webp" alt="cheesecake">
+                <img src="croissant.jpeg" alt="croissant">
+                <img src="panini.jpg" alt="panini">
+                <img src="te.webp" alt="té">
+            </div>
+        </div>
+
+        <section>
+            <article id="menu">
+                <h1><i class="fa-solid fa-star"></i>&nbsp;Menú Galáctico</h1>
+                <ul>
+                    <li><strong>Espresso Estelar</strong> - $42 <br><small>Café intenso para despegar tu día.</small></li>
+                    <li><strong>Latte Nebulosa</strong> - $55 <br><small>Leche vaporizada con toques de vainilla.</small></li>
+                    <li><strong>Brownie Meteorito</strong> - $40 <br><small>Postre casero que cae del cielo.</small></li>
+                    <li><strong>Galaxy Frappe</strong> - $65 <br><small>Refrescante y con un toque de cacao cósmico.</small></li>
+                </ul>
+            </article>
+
+            <article id="promos">
+                <h1><i class="fa-solid fa-meteor"></i>&nbsp;Promociones Estelares</h1>
+                <ul>
+                    <li><strong>Hora Galáctica</strong> <br><small>2x1 en Espressos Estelares de 3pm a 5pm</small></li>
+                    <li><strong>Combo Vía Láctea</strong> - $90 <br><small>Latte Nebulosa + Brownie Meteorito</small></li>
+                </ul>
+            </article>
+
+            <article id="nosotros">
+                <h1><i class="fa-solid fa-galactic-senate"></i>&nbsp;Quiénes Somos</h1>
+                <p>En Cafetería Galaxia nos encanta crear experiencias que transporten a nuestros clientes. 
+                Cada taza es un viaje interplanetario con granos seleccionados y postres de otro mundo.</p>
+                <ul>
+                    <li><strong>Sugerencia de la Casa</strong> <br><small>Prueba el "Cosmo Cold Brew", infusionado por 12 horas.</small></li>
+                </ul>
+            </article>
+
+            <article id="contacto">
+                <h1><i class="fa-solid fa-satellite-dish"></i>&nbsp;Contacto</h1>
+                <p>Calle Estrella #42, Ciudad Galaxia</p>
+                <p>(999) 123-4567</p>
+                <p>contacto@cafeteriagalaxia.com</p>
+                <p>Síguenos en Instagram | Facebook | TikTok</p>
+                <p>© 2025 Cafetería Galaxia - Todos los derechos reservados</p>
+            </article>
+        </section>
+    </div>
+</body>
+</html>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Clima en Apodaca</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="bg-light">
+    <main class="container py-5">
+        <!-- ENCABEZADO -->
+        <header class="text-center mb-4">
+            <h1 class="display-5 fw-bold text-primary">Clima en Apodaca, N.L.</h1>
+            <h2 class="h5 text-secondary">Semana 02 al 07 de Septiembre</h2>
+            <p class="fw-semibold">Responsable: Giovanni Missael Rodriguez Sanchez</p>
+        </header>
+
+        <!-- PRONÓSTICO SEMANAL -->
+        <section class="row text-center g-3">
+            <div class="col-md-2 col-6">
+                <div class="border rounded p-3 shadow-sm bg-white">
+                    <h5>Lunes 02</h5>
+                    <i class="fa-solid fa-cloud h1 text-secondary"></i>
+                    <h6>Nublado</h6>
+                    <p>20°C | 25°C</p>
+                    <hr>
+                    <i class="fa-solid fa-wind"></i>
+                    <p>13 - 29 km/h</p>
+                </div>
+            </div>
+
+            <div class="col-md-2 col-6">
+                <div class="border rounded p-3 shadow-sm bg-white">
+                    <h5>Martes 03</h5>
+                    <i class="fa-solid fa-bolt h1 text-warning"></i>
+                    <h6>Tormenta</h6>
+                    <p>23°C | 27°C</p>
+                    <hr>
+                    <i class="fa-solid fa-wind"></i>
+                    <p>13 - 29 km/h</p>
+                </div>
+            </div>
+
+            <div class="col-md-2 col-6">
+                <div class="border rounded p-3 shadow-sm bg-white">
+                    <h5>Miércoles 04</h5>
+                    <i class="fa-solid fa-cloud-showers-heavy h1 text-primary"></i>
+                    <h6>Lluvia</h6>
+                    <p>25°C | 30°C</p>
+                    <hr>
+                    <i class="fa-solid fa-wind"></i>
+                    <p>15 - 30 km/h</p>
+                </div>
+            </div>
+
+            <div class="col-md-2 col-6">
+                <div class="border rounded p-3 shadow-sm bg-white">
+                    <h5>Jueves 05</h5>
+                    <i class="fa-solid fa-wind h1 text-info"></i>
+                    <h6>Ventoso</h6>
+                    <p>24°C | 28°C</p>
+                    <hr>
+                    <i class="fa-solid fa-wind"></i>
+                    <p>20 - 35 km/h</p>
+                </div>
+            </div>
+
+            <div class="col-md-2 col-6">
+                <div class="border rounded p-3 shadow-sm bg-white">
+                    <h5>Viernes 06</h5>
+                    <i class="fa-solid fa-sun h1 text-warning"></i>
+                    <h6>Soleado</h6>
+                    <p>32°C | 35°C</p>
+                    <hr>
+                    <i class="fa-solid fa-wind"></i>
+                    <p>10 - 20 km/h</p>
+                </div>
+            </div>
+
+            <div class="col-md-2 col-6">
+                <div class="border rounded p-3 shadow-sm bg-white">
+                    <h5>Sábado 07</h5>
+                    <i class="fa-solid fa-cloud-moon-rain h1 text-primary"></i>
+                    <h6>Lluvioso</h6>
+                    <p>20°C | 25°C</p>
+                    <hr>
+                    <i class="fa-solid fa-wind"></i>
+                    <p>12 - 28 km/h</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- PRONÓSTICO EXTENDIDO + INFO ADICIONAL -->
+        <section class="row mt-5">
+            <div class="col-md-6">
+                <h5 class="fw-bold">Pronóstico Extendido</h5>
+                <p>Del 08 al 14 de Septiembre</p>
+                <table class="table table-striped table-hover shadow-sm">
+                    <thead class="table-primary">
+                        <tr>
+                            <th>Fecha</th>
+                            <th>Max</th>
+                            <th>Min</th>
+                            <th>Estado</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>8 Sept</td><td>28°C</td><td>18°C</td><td>Parcialmente Nublado</td></tr>
+                        <tr><td>9 Sept</td><td>30°C</td><td>20°C</td><td>Despejado</td></tr>
+                        <tr><td>10 Sept</td><td>28°C</td><td>18°C</td><td>Parcialmente Soleado</td></tr>
+                        <tr><td>11 Sept</td><td>30°C</td><td>16°C</td><td>Mayormente Nublado</td></tr>
+                        <tr><td>12 Sept</td><td>26°C</td><td>18°C</td><td>Soleado</td></tr>
+                        <tr><td>13 Sept</td><td>28°C</td><td>18°C</td><td>Despejado</td></tr>
+                        <tr><td>14 Sept</td><td>30°C</td><td>29°C</td><td>Soleado</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="col-md-6">
+                <div class="card shadow">
+                    <div class="card-header bg-primary text-white">
+                        <h4 class="mb-0">Salida y Puesta del Sol</h4>
+                    </div>
+                    <div class="card-body">
+                        <div class="row text-center">
+                            <div class="col-6">
+                                <h6>Salida</h6>
+                                <i class="fa-solid fa-sun h1 text-warning"></i>
+                                <h3>7:00 A.M</h3>
+                            </div>
+                            <div class="col-6">
+                                <h6>Puesta</h6>
+                                <i class="fa-solid fa-cloud-sun h1 text-secondary"></i>
+                                <h3>6:00 P.M</h3>
+                            </div>
+                        </div>
+                        <hr>
+                        <h6>Información UV</h6>
+                        <p class="small">
+                            La radiación UV puede causar quemaduras solares, envejecimiento prematuro de la piel y es un factor de riesgo para cáncer de piel.
+                            Usa protector solar si pasas tiempo al aire libre.
+                        </p>
+                    </div>
+                    <div class="card-footer text-center text-muted">
+                        Datos meteorológicos de referencia
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="alert alert-info text-center mt-4">
+            Información elaborada por: <strong>Giovanni Missael Rodriguez Sanchez</strong>
+        </div>
+    </main>
+</body>
+
+</html>
