@@ -128,3 +128,61 @@ nav ul li a:hover {
     color: #bb8a8a;
     margin-top: 0.2rem;
 }
+
+/* Estilo para secciones nuevas */
+#promos, #nosotros, #barista, #contacto {
+    width: 90%;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    background-color: #fdf6f6;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    color: #4b3b2b;
+}
+
+#promos h1, #nosotros h1, #barista h1, #contacto h1 {
+    color: #7f1a2b;
+    margin-bottom: 1rem;
+}
+
+#promos ul, #contacto ul {
+    list-style: none;
+    padding: 0;
+}
+
+#promos ul li {
+    margin-bottom: 0.8rem;
+    padding-left: 1rem;
+    border-left: 4px solid #bd6d78;
+}
+
+#nosotros p, #barista p, #contacto p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 3rem;
+    background-color: #000;
+    color: #fff;
+    padding: 1rem;
+    border-radius: 0 0 10px 10px;
+}
+
+footer a {
+    color: #f8c1c1;
+    text-decoration: none;
+    margin: 0 0.3rem;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer .copy {
+    font-size: 0.8rem;
+    margin-top: 1rem;
+    color: #bbb;
+}
